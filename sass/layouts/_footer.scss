@@ -15,8 +15,9 @@
   @include font-data(14px, $primary-white-color, 400, 1.71, 0.03em);
   font-style: normal;
   text-decoration: none;
+}
 
-  &-items {
+.adress-items {
     display: block;
 
     margin-top: 0;
@@ -24,10 +25,10 @@
     padding-left: 0;
   }
 
-  &-list {
+  .adress-list {
     margin-bottom: 9px;
   }
-}
+
 
 
 
@@ -137,11 +138,12 @@
 
 .social-link {
   margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
-.social-link:last-child {
-  margin-right: 0;
-}
 
 //Forma
 

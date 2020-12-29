@@ -2,12 +2,13 @@
   display: block;
 
   padding-bottom: 94px;
+}
 
-  &-thumb {
+  .business-thumb {
     position: relative;
   }
 
-  &-overlay {
+  .business-overlay {
     position: absolute;
     width: 100%;
     height: 70px;
@@ -16,10 +17,11 @@
     opacity: 0;
   }
 
-  &-overlay {
+  .business-overlay {
     opacity: 1;
   }
-  &-description {
+
+  .business-description {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +35,7 @@
     opacity: 0;
     transition: 250ms opacity var(--timing-function);*/
   }
-}
+
 
 .items-do {
   display: flex;

@@ -9,6 +9,16 @@
 
 .check {
   padding-left: 25px;
+
+  &::before {
+    content: "";
+
+    margin-left: -25px;
+    height: 15px;
+    width: 16px;
+    border: 2px solid black;
+    border-radius: 4px;
+  }
 }
 .visually-hidden {
   position: absolute;
@@ -56,15 +66,6 @@
   align-items: center;
 }
 
-.check::before {
-  content: "";
-
-  margin-left: -25px;
-  height: 15px;
-  width: 16px;
-  border: 2px solid black;
-  border-radius: 4px;
-}
 
 .check__input:checked ~ .check::before {
   border: 2px solid black;

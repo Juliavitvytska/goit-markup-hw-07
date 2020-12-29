@@ -11,6 +11,14 @@
 .client {
   display: flex;
   margin-left: 30px;
+
+  &:hover {
+    border-color: $secondary-bcg-color;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .link-icon {
@@ -37,10 +45,4 @@
   border-color: $secondary-bcg-color;
 }
 
-.client:hover {
-  border-color: $secondary-bcg-color;
-}
 
-.client:first-child {
-  margin-left: 0;
-}

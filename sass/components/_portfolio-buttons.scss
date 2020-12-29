@@ -4,11 +4,16 @@
   margin-bottom: 50px;
 
   justify-content: center;
-
-  &-items {
-    margin-left: 8px;
-  }
 }
+
+.button-items {
+  margin-left: 8px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+  }
+
 
 .portfolio-buttons {
   display: block;
@@ -46,6 +51,3 @@
 }
 
 
-.button-items:first-child {
-  margin-left: 0;
-}
