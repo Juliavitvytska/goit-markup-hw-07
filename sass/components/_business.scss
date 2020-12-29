@@ -1,0 +1,65 @@
+.business {
+  display: block;
+
+  padding-bottom: 94px;
+}
+
+.items-do {
+  display: flex;
+  overflow: hidden;
+
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.items-do .do-list + .do-list {
+  margin-left: 30px;
+}
+
+.do-list-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Roboto";
+  font-style: normal;
+  @include font-data(14px, $primary-white-color, 700, 1.14, 0.03em);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 27px;
+  padding-top: 27px;
+}
+
+.business-thumb {
+  position: relative;
+}
+
+.business-overlay {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  opacity: 0;
+}
+
+.business-overlay {
+  opacity: 1;
+}
+
+.business-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /*Добавление анимации всплывания фона с текстом
+  
+  opacity: 0;
+  transition: 250ms opacity var(--timing-function);*/
+}

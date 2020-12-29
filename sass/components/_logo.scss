@@ -1,0 +1,32 @@
+.container-item .first-link {
+  display: block;
+
+  color: $container;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.white-logo {
+  color: $primary-white-color;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.17;
+  font-weight: 700;
+}
+
+.blue-logo {
+  color: $secondary-bcg-color;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}

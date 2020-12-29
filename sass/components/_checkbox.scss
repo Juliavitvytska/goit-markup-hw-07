@@ -1,0 +1,89 @@
+.option {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.check {
+  padding-left: 25px;
+}
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checked-text {
+  display: block;
+
+  margin-left: 7px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1, 71;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.check__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+
+  color: $secondary-bcg-color;
+}
+
+.form-field.check {
+  justify-content: center;
+  align-items: center;
+}
+
+.check::before {
+  content: "";
+
+  margin-left: -25px;
+  height: 15px;
+  width: 16px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.check__input:checked ~ .check::before {
+  border: 2px solid black;
+  border-radius: 4px;
+  transition: border-color 250ms $timing-function,
+    background-color 250ms $timing-function;
+}
+
+.check__input:checked:focus ~ .check::before {
+  background-image: url(../../images/ok.svg);
+  background-color: $secondary-bcg-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 2px solid $secondary-bcg-color;
+
+  border-radius: 4px;
+  overflow: hidden;
+  transition: border 250ms $timing-function,
+    background-image 250ms $timing-function,
+    background-color 250ms $timing-function;
+}

@@ -1,4 +1,14 @@
-@import "./utils/variables.scss";
+// Componets - это компоненты типа контейнер, лого, список контактов, секция, модалка
+// Layout - это стили для, например хедера, футера, не одинаковых секций, типа где нет ничего общего
+
+// Utils
+@import "./utils/mixins";
+@import "./utils/variables";
+
+//Base
+@import "./base/base";
+
+// Components
 
 @import "./components/advantages";
 
@@ -8,13 +18,11 @@
 
 @import "./components/clients";
 
-@import "./components/footer";
-
-@import "./components/header";
-
 @import "./components/hero";
 
 @import "./components/logo";
+
+@import "./components/navigation";
 
 @import "./components/modal";
 
@@ -23,3 +31,9 @@
 @import "./components/portfolio-list";
 
 @import "./components/team";
+
+// Layouts
+
+@import "./layouts/footer";
+
+@import "./layouts/header";

@@ -1,0 +1,46 @@
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.list-clients {
+  display: flex;
+  padding-left: 0;
+}
+
+.client {
+  display: flex;
+  margin-left: 30px;
+}
+
+.link-icon {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 90px;
+  border: 1px solid $icon-client-logo;
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: $icon-client-logo;
+
+  transition: border 250ms $timing-function, fill 250ms $timing-function;
+}
+
+.icon-logo:hover,
+.icon-logo:focus,
+.link-icon:hover,
+.link-icon:focus {
+  fill: $secondary-bcg-color;
+  border-color: $secondary-bcg-color;
+}
+
+.client:hover {
+  border-color: $secondary-bcg-color;
+}
+
+.client:first-child {
+  margin-left: 0;
+}

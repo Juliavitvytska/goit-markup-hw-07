@@ -6,17 +6,22 @@
     <!-- Подключние стилей-->
 
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
+    <!--<link rel="preconnect" href="https://fonts.gstatic.com" />
+     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
-    />
+    />-->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+      </style>
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+
     <!--modern-normalize-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -116,7 +121,7 @@
                   ></textarea>
                 </div>
 
-                <div class="form-field">
+                <div class="form-field form-field-check">
                   <input
                     class="check__input visually-hidden"
                     type="checkbox"
@@ -124,7 +129,6 @@
                     id="checkbox"
                   />
                   <label for="checkbox" class="check option">
-                    <!--<span class="check__box "></span>-->
                     <span class="checked-text">
                       Соглашаюсь с рассылкой и принимаю
                       <a class="check__link" href="">Условия договора</a>
@@ -152,7 +156,7 @@
       <section class="qualities">
         <div class="container">
           <ul class="advantages-list">
-            <li class="item antenna">
+            <li class="item">
               <div class="antenna-container">
                 <svg width="70" height="70">
                   <use href="./images/sprite.svg#icon-antenna"></use>
@@ -164,7 +168,7 @@
                 формированию позиции.
               </p>
             </li>
-            <li class="item clock">
+            <li class="item">
               <div class="clock-container">
                 <svg width="70" height="70">
                   <use href="./images/sprite.svg#icon-clock"></use>
@@ -176,7 +180,7 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="item diagram">
+            <li class="item">
               <div class="diagram-container">
                 <svg width="70" height="70">
                   <use href="./images/sprite.svg#icon-diagram"></use>
@@ -188,7 +192,7 @@
                 степени обуславливает.
               </p>
             </li>
-            <li class="item astronaut">
+            <li class="item">
               <div class="astronaut-container">
                 <svg width="70" height="70">
                   <use href="./images/sprite.svg#icon-astronaut"></use>
@@ -485,7 +489,7 @@
                 </li>
                 <li class="adress-list">
                   <a class="mail-footer" href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
+                    >info@example.com</a
                   >
                 </li>
                 <li>

@@ -1,0 +1,55 @@
+.qualities {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.advantages-list {
+  display: flex;
+
+  padding-left: 0;
+}
+
+.advantages {
+  display: block;
+
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-family: "Roboto", sans-serif;
+  @include font-data(14px, $primery-text-color, 700, 1.14, 0.03em);
+  text-transform: uppercase;
+}
+
+.item p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.description-qualities {
+  font-family: "Roboto", sans-serif;
+  @include font-data(14px, $secondary-text-color, 400, 1.71, 0.03em);
+}
+
+.advantages-list .item {
+  width: 270px;
+}
+
+.advantages-list .item + .item {
+  margin-left: 30px;
+}
+
+.antenna-container,
+.clock-container,
+.diagram-container,
+.astronaut-container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: $bcg-outteam-button-color;
+  border-radius: 4px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}

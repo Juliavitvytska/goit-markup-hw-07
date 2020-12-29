@@ -1,0 +1,35 @@
+// %header-border {
+//   border-bottom-width: 1px;
+//   border-bottom-style: solid;
+//   border-bottom-color: #eeeeee;
+// }
+
+// Это называется плейсхолдер - так записываеются "переменные " для свойств
+// не цвета, шрифты и прочее
+// для цветов и переменных  - зеачек доллара
+
+// но это фигня немного странно работает на этом компиляторе. Так что если не хочешь рисковать - не надо))
+
+@mixin font-data(
+  $size: false,
+  $colour: false,
+  $weight: false,
+  $lh: false,
+  $ls: false
+) {
+  @if $size {
+    font-size: $size;
+  }
+  @if $colour {
+    color: $colour;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}

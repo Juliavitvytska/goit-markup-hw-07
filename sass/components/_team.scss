@@ -1,0 +1,122 @@
+.our-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $bcg-outteam-button-color;
+}
+
+.our-team h2 {
+  display: block;
+}
+
+.team-list {
+  display: flex;
+
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.team-list .person + .person {
+  margin-left: 30px;
+}
+
+.person {
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team {
+  display: block;
+
+  margin-bottom: 0;
+  margin-top: 0;
+
+  font-family: "Roboto", sans-serif;
+  @include font-data(16px, $primery-text-color, 500, 1.19, 0.03em);
+}
+
+.person-data {
+  display: block;
+
+  padding: 30px 15px;
+  text-align: center;
+  background-color: $primary-white-color;
+}
+
+.position {
+  display: block;
+
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  @include font-data(16px, $secondary-text-color, 400, 1.19, 0.03em);
+}
+
+.socialmedia {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin: 16px 0 0 0;
+  padding: 0;
+}
+
+.icon-instagram,
+.icon-twitter,
+.icon-facebook,
+.icon-linkedin2 {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+
+  fill: $icon-client-logo;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  transition: 250ms background-color $timing-function,
+    fill 250ms $timing-function;
+}
+
+.item-instagram,
+.item-twitter,
+.item-facebook,
+.item-linkedin2 {
+  padding: 0;
+  margin: 0;
+}
+
+.icon-instagram:hover,
+.icon-twitter:hover,
+.icon-facebook:hover,
+.icon-linkedin2:hover {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: $secondary-bcg-color;
+  border: 1px solid transparent;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  fill: $primary-white-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.icon-twitter,
+.icon-facebook,
+.icon-linkedin2 {
+  height: 44px;
+  width: 44px;
+  fill: $icon-client-logo;
+}

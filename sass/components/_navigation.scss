@@ -1,0 +1,51 @@
+.studia,
+.portfolio,
+.contacts-page {
+  font-family: "Roboto", sans-serif;
+  @include font-data(14px, $primery-text-color, 500, 1.14, 0.02em);
+  text-decoration: none;
+  transition: color 250ms $timing-function;
+}
+
+.studia {
+  text-decoration: none;
+}
+
+.mail,
+.tel {
+  display: flex;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-family: "Roboto", sans-serif;
+  @include font-data(16px, $secondary-text-color, 500, 1.14, 0.02em);
+
+  font-style: normal;
+  text-decoration: none;
+  transition: color 250ms $timing-function;
+}
+.mail:hover,
+.tel:hover,
+.studia:hover,
+.portfolio:hover,
+.contacts-page:hover,
+.studia:active,
+.portfolio:active,
+.contacts-page:active,
+.main-nav .studia.current,
+.main-nav .portfolio.current {
+  color: $primery-text-color;
+  color: $secondary-bcg-color;
+  fill: currentColor;
+}
+
+.icon-mail {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-tel {
+  margin-right: 10px;
+  fill: currentColor;
+}
