@@ -2,6 +2,37 @@
   display: block;
 
   padding-bottom: 94px;
+
+  &-thumb {
+    position: relative;
+  }
+
+  &-overlay {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    opacity: 0;
+  }
+
+  &-overlay {
+    opacity: 1;
+  }
+  &-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /*Добавление анимации всплывания фона с текстом
+
+    opacity: 0;
+    transition: 250ms opacity var(--timing-function);*/
+  }
 }
 
 .items-do {
@@ -30,36 +61,4 @@
   margin: 0;
   padding-bottom: 27px;
   padding-top: 27px;
-}
-
-.business-thumb {
-  position: relative;
-}
-
-.business-overlay {
-  position: absolute;
-  width: 100%;
-  height: 70px;
-  bottom: 0;
-  background-color: rgba(47, 48, 58, 0.8);
-  opacity: 0;
-}
-
-.business-overlay {
-  opacity: 1;
-}
-
-.business-description {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  /*Добавление анимации всплывания фона с текстом
-  
-  opacity: 0;
-  transition: 250ms opacity var(--timing-function);*/
 }

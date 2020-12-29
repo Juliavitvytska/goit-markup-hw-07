@@ -74,14 +74,54 @@
   width: 448px;
 
   text-align: left;
-}
 
-.form-field {
-  position: relative;
-  display: flex;
-  flex-direction: column;
+  &-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
 
-  margin-bottom: 10px;
+    margin-bottom: 10px;
+  }
+
+  &-label {
+    margin-bottom: 4px;
+
+    @include font-data(12px, $secondary-text-color, 400, 1.17, 0.01em);
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+  }
+
+  &-name {
+    margin-bottom: 12px;
+    margin-top: 0;
+    font-family: "Roboto", sans-serif;
+    @include font-data(20px, $primery-text-color, 700, 1.15, 0.03em);
+
+    font-style: normal;
+    text-align: center;
+  }
+
+  &-input {
+    position: relative;
+
+    margin: 0;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 42px;
+    padding-right: 12px;
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    @include font-data(12px, $secondary-text-color, 400, 1.17, 0.01em);
+    outline: transparent;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 448px;
+
+    transition: border 250ms $timing-function;
+  }
 }
 
 .form-field:nth-last-child(2),
@@ -91,46 +131,6 @@
 
 .form-field .textarea-field {
   margin-bottom: 20;
-}
-
-.form-label {
-  margin-bottom: 4px;
-
-  @include font-data(12px, $secondary-text-color, 400, 1.17, 0.01em);
-
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-}
-
-.form-name {
-  margin-bottom: 12px;
-  margin-top: 0;
-  font-family: "Roboto", sans-serif;
-  @include font-data(20px, $primery-text-color, 700, 1.15, 0.03em);
-
-  font-style: normal;
-  text-align: center;
-}
-
-.form-input {
-  position: relative;
-
-  margin: 0;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  padding-left: 42px;
-  padding-right: 12px;
-
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  @include font-data(12px, $secondary-text-color, 400, 1.17, 0.01em);
-  outline: transparent;
-
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  width: 448px;
-
-  transition: border 250ms $timing-function;
 }
 
 textarea {

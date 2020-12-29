@@ -91,15 +91,16 @@
   display: block;
 }
 
-.content-title {
-  display: block;
-  margin-bottom: 4px;
-  margin-top: 0;
-}
 
 .content {
   display: block;
   margin: 0;
+
+  &-title {
+    display: block;
+    margin-bottom: 4px;
+    margin-top: 0;
+  }
 }
 
 .project-thumb {
