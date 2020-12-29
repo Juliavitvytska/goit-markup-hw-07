@@ -75,7 +75,7 @@
 }
 
 .check__input:checked:focus ~ .check::before {
-  background-image: url(../../images/ok.svg);
+  background-image: url(../images/ok.svg);
   background-color: $secondary-bcg-color;
   background-repeat: no-repeat;
   background-position: center;
