@@ -32,7 +32,7 @@
   margin-bottom: 0;
   margin-top: 0;
 
-  font-family: "Roboto", sans-serif;
+  font-family: $font-roboto;
   @include font-data(16px, $primery-text-color, 500, 1.19, 0.03em);
 }
 
@@ -49,7 +49,7 @@
 
   margin-bottom: 0;
   margin-top: 10px;
-  font-family: "Roboto", sans-serif;
+  font-family: $font-roboto;
   @include font-data(16px, $secondary-text-color, 400, 1.19, 0.03em);
 }
 

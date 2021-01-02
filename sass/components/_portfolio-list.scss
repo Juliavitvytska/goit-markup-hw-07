@@ -130,7 +130,7 @@
 .description {
   @include font-data(18px, $primary-white-color, 400, 1.55, 0.03em);
 
-  font-family: "Roboto";
+  font-family: $font-roboto;
   font-style: normal;
   margin: 0;
 }

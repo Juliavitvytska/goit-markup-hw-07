@@ -25,7 +25,7 @@
   margin-bottom: 30px;
 
   @include font-data(44px, $primary-white-color, 900, 1.36, 0.06em);
-  font-family: "Roboto", sans-serif;
+  font-family: $font-roboto;
   font-style: normal;
   text-align: center;
 

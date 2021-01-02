@@ -13,7 +13,7 @@ body {
   background-color: $primary-white-color;
   color: $primery-text-color;
 
-  font-family: "Roboto", sans-serif;
+  font-family: $font-roboto;
 }
 
 ul {
@@ -39,7 +39,7 @@ img {
   margin-top: 0;
   margin-bottom: 50px;
 
-  font-family: "Roboto", sans-serif;
+  font-family: $font-roboto;
   @include font-data(36px, $primery-text-color, 700, 1.7, 0.03em);
   text-align: center;
 }

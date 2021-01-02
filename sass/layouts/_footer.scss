@@ -11,7 +11,7 @@
 .adress {
   display: block;
   margin-bottom: 9px;
-  font-family: "Roboto", sans-serif;
+  font-family: $font-roboto;
   @include font-data(14px, $primary-white-color, 400, 1.71, 0.03em);
   font-style: normal;
   text-decoration: none;
@@ -46,7 +46,7 @@
 .tel-footer {
   display: block;
 
-  font-family: "Roboto", sans-serif;
+  font-family: $font-roboto;
   @include font-data(14px, $footer-text-color, 400, 1.71, 0.03em);
   font-weight: normal;
   font-style: normal;
@@ -80,7 +80,7 @@
 
   margin-bottom: 20px;
 
-  font-family: "Roboto", sans-serif;
+  font-family: $font-roboto;
   @include font-data(14px, $primary-white-color, 700, 1.14, 0.03em);
   text-transform: uppercase;
 }
@@ -157,7 +157,7 @@
   margin-top: 0;
   text-align: left;
 
-  font-family: "Roboto", sans-serif;
+  font-family: $font-roboto;
   @include font-data(20px, $primary-white-color, 700, 1.15, 0.03em);
   text-align: center;
   text-transform: uppercase;
@@ -171,7 +171,7 @@
   padding-left: 16px;
   padding-right: 16px;
 
-  font-family: "Roboto", sans-serif;
+  font-family: $font-roboto;
   color: $primary-white-color;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -200,7 +200,7 @@
   width: 200px;
   height: 50px;
 
-  font-family: "Roboto", sans-serif;
+  font-family: $font-roboto;
   @include font-data(16px, $primary-white-color, 700, 1.88, 0.06em);
   text-align: center;
 

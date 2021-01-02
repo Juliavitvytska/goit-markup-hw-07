@@ -1,7 +1,7 @@
 .studia,
 .portfolio,
 .contacts-page {
-  font-family: "Roboto", sans-serif;
+  font-family: $font-roboto;
   @include font-data(14px, $primery-text-color, 500, 1.14, 0.02em);
   text-decoration: none;
   transition: color 250ms $timing-function;
@@ -18,7 +18,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
-  font-family: "Roboto", sans-serif;
+  font-family: $font-roboto;
   @include font-data(16px, $secondary-text-color, 500, 1.14, 0.02em);
 
   font-style: normal;
